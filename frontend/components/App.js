@@ -43,7 +43,11 @@ function App() {
     <div>
       <h2>Star Wars Characters</h2>
       <p>See the README of the project for instructions on completing this challenge</p>
-      
+      {
+        characters.map(
+          (character, index) => <Character key={index} character={character}/>
+        )
+      }
       {/* ❗ Map over the data in state, rendering a Character at each iteration */}
     </div>
   )
